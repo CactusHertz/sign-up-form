@@ -3,11 +3,19 @@
     src: url(Norse-Bold.otf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body {
     display: flex;
     margin: 0;
     padding: 0;
+ 
+    background-color: #F6F7F8;
 }
 
 .left {
@@ -61,18 +69,26 @@ a:visited {
     width: auto;
 }
 
-
-
 .right {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .intro,
 .submit-area {
-    background-color: #F6F7F8;
     padding: 2em;
+}
+
+.intro {
+    font-size: 1.5em;
+}
+
+.input-area {
+    padding: 2em;
+    box-shadow: 0px 5px 10px lightgrey; 
+    background-color: white;
 }
 
 input[type="submit"]{
@@ -82,6 +98,18 @@ input[type="submit"]{
     border-radius: 5px;
     padding: 10px 40px;
 }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]{
+    border: 1px solid #E5E7EB;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+legend {
+    font-size: 2em;
+}
 .login-area {
     margin-top: 20px;
 }
@@ -90,3 +118,20 @@ input[type="submit"]{
     color: #596D48;
     text-decoration: none;
 }
+
+.form-row {
+    display: flex;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-right: 4em;
+    width: 20em;
+}
+
+label {
+    font-size: 1em;
+}
+
